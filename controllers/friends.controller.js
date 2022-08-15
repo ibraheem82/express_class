@@ -1,4 +1,4 @@
-function friendsController(req, res)  {
+function postFriend(req, res)  {
     if(!req.body.name) {
         return res.status(400).json({
             error: 'Missing friends name'
@@ -12,4 +12,9 @@ function friendsController(req, res)  {
     friends.push(newFriend);
 
     res.send(newFriend);
+}
+
+
+function getFriends(req, res) {
+    res.json(friends);
 }
