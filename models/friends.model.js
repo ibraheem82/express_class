@@ -69,3 +69,5 @@ const friends =  [{
     name: 'Sudais Rahman'
 }
 ]
+
+module.exports = friends;
